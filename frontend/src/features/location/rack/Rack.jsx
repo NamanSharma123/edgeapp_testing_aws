@@ -21,7 +21,7 @@ export default function Rack() {
     is_active: "true",
   });
 
-  const { data, isLoading } = useGetJunctionBoxesQuery({ page, search });
+  const { data } = useGetJunctionBoxesQuery({ page, search });
 
   // ✅ IMPORTANT: pass parameters to useGetEntitiesQuery
   const { data: entity } = useGetEntitiesQuery({

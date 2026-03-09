@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import logo from '../../assets/logo.jpeg';
+// import logo from '../../assets/logo.jpeg';
 
 export default function LeftSidebar() {
   const [openDropdown, setOpenDropdown] = useState(null);

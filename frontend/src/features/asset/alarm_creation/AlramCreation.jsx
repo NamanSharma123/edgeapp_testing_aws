@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import {
   useGetAlarmsQuery,
   useCreateAlarmMutation,
@@ -95,6 +95,7 @@ export default function AlramCreation() {
         await deleteAlarm(id).unwrap();
         alert("🗑️ Deleted Successfully");
       } catch (err) {
+        console.error(err);
         alert("❌ Failed to delete");
       }
     }

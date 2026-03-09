@@ -15,7 +15,7 @@ function Severitymaster() {
     severitystring: "",
   });
 
-  const { data, isLoading } = useGetSeveritiesQuery({ page, search });
+  const { data } = useGetSeveritiesQuery({ page, search });
 
   const [createSeverity] = useCreateSeverityMutation();
   const [updateSeverity] = useUpdateSeverityMutation();

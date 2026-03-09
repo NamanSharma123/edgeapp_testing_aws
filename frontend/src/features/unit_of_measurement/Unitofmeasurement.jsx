@@ -10,7 +10,7 @@ function Unitofmeasurement() {
   const [page, setPage] = useState(1);
   const [search, setSearch] = useState("");
 
-  const { data, isLoading, refetch } = useGetUnitsQuery({
+  const { data, refetch } = useGetUnitsQuery({
     page,
     page_size: 5,
     search,
